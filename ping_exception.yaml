@@ -1,8 +1,9 @@
 - name: Induce an exception to see what happens
   hosts: all
-  ansible.builtin.ping:
-    data: crash
+
   tasks:
+    - ansible.builtin.ping:
+      data: crash
     - name: Exception
       debug:
         msg: "Exception occurred!"

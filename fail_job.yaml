@@ -1,7 +1,7 @@
 - name: Example using fail
   hosts: all
   tasks:
-    ansible.builtin.fail:
+    - ansible.builtin.fail:
       msg: System failed deployment
     - name: Fail Message
       debug:
