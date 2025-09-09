@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - ansible.builtin.fail:
-      msg: System failed deployment
+        msg: System failed deployment
     - name: Fail Message
       debug:
         msg: "Failure occurred!"

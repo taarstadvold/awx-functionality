@@ -3,7 +3,7 @@
 
   tasks:
     - ansible.builtin.ping:
-      data: crash
+        data: crash
     - name: Exception
       debug:
         msg: "Exception occurred!"
