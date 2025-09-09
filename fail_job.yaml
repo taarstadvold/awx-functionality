@@ -3,7 +3,7 @@
   tasks:
     - ansible.builtin.fail:
         msg: System failed deployment
-        when: explode | bool
+      when: explode | bool
     - name: System Check
       debug:
         msg: "System OK!"
