@@ -5,4 +5,5 @@
         msg: System failed deployment
     - name: Fail Message
       debug:
+        when: explode | bool
         msg: "Failure occurred!"
