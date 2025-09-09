@@ -1,0 +1,3 @@
+- name: Example using fail
+  ansible.builtin.fail:
+    msg: System failed deployment
