@@ -1,2 +1,7 @@
 - name: Example from an Ansible Playbook
+  hosts: all
   ansible.builtin.ping:
+  tasks:
+    - name: Example
+      debug:
+        msg: "This is an example!"
