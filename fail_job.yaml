@@ -1,8 +1,8 @@
 - name: Example using fail
   hosts: all
-  ansible.builtin.fail:
-    msg: System failed deployment
   tasks:
+    ansible.builtin.fail:
+      msg: System failed deployment
     - name: Fail Message
       debug:
         msg: "Failure occurred!"
